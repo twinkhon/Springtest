@@ -24,6 +24,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	apply plugin: 'org.springframework.boot'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
@@ -33,3 +34,4 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+apply plugin: 'org.springframework.boot'
